@@ -1,0 +1,257 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #eef4ff, #dfe9ff);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.dashboard-container {
+  width: 100%;
+  max-width: 1200px;
+}
+
+.dashboard-layout {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 24px;
+  align-items: start;
+}
+
+.form-box {
+  width: 100%;
+  max-width: 520px;
+  background: #ffffff;
+  padding: 30px 28px;
+  border-radius: 18px;
+  box-shadow: 0 18px 45px rgba(18, 40, 88, 0.12);
+}
+
+.large-box {
+  max-width: 620px;
+}
+
+.profile-panel {
+  max-width: none;
+}
+
+.events-panel {
+  background: #ffffff;
+  border-radius: 18px;
+  box-shadow: 0 18px 45px rgba(18, 40, 88, 0.12);
+  padding: 26px 20px;
+}
+
+.events-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.tag {
+  display: inline-block;
+  background: #edf2ff;
+  color: #365ad8;
+  border-radius: 999px;
+  padding: 6px 12px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.events-header h2 {
+  color: #1d3557;
+  font-size: 2rem;
+  margin-bottom: 4px;
+}
+
+.events-header p {
+  color: #52627a;
+  margin-bottom: 0;
+}
+
+.club-grid {
+  display: grid;
+  gap: 16px;
+}
+
+.club-card {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  border-radius: 14px;
+  padding: 16px;
+  color: #1e2b45;
+  border: 1px solid rgba(91, 116, 165, 0.12);
+}
+
+.club-card.sports {
+  background: linear-gradient(135deg, #eafaf2, #dff7ea);
+}
+
+.club-card.dance {
+  background: linear-gradient(135deg, #fff1f9, #ffe6f6);
+}
+
+.club-card.music {
+  background: linear-gradient(135deg, #f3f0ff, #eae4ff);
+}
+
+.club-card.coding {
+  background: linear-gradient(135deg, #eef7ff, #e1f0ff);
+}
+
+.club-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  color: #fff;
+  background: #2f6df6;
+  flex-shrink: 0;
+}
+
+.club-body {
+  flex: 1;
+}
+
+.club-body h3 {
+  font-size: 1.15rem;
+  margin-bottom: 4px;
+}
+
+.club-date {
+  margin-bottom: 8px;
+  font-size: 0.8rem;
+  color: #4d5d7a;
+  font-weight: 700;
+}
+
+.club-body p {
+  text-align: left;
+  margin-bottom: 0;
+  color: #3d4d67;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 8px;
+  color: #1d3557;
+  text-align: center;
+}
+
+p {
+  text-align: center;
+  color: #52627a;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.grid-two {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+label {
+  color: #27364d;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #cfd9ea;
+  border-radius: 10px;
+  outline: none;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #4d79f1;
+  box-shadow: 0 0 0 3px rgba(77, 121, 241, 0.15);
+}
+
+textarea {
+  resize: vertical;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #4d79f1, #6a8eff);
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 14px 18px;
+  border-radius: 10px;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-1px);
+  opacity: 0.96;
+}
+
+.switch-link {
+  margin-top: 18px;
+  font-size: 0.95rem;
+}
+
+.switch-link a {
+  color: #335fd1;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.switch-link a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+  .dashboard-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 560px) {
+  .grid-two {
+    grid-template-columns: 1fr;
+  }
+
+  .form-box {
+    padding: 22px 18px;
+  }
+}

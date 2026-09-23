@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Update Profile</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container dashboard-container">
+      <div class="dashboard-layout">
+        <div class="form-box large-box profile-panel">
+          <h1>Update Student Profile</h1>
+          <p id="profileStatus">Change your profile information</p>
+
+          <form id="updateProfileForm">
+            <div class="grid-two">
+              <div class="input-group">
+                <label for="updateFirstName">First Name</label>
+                <input type="text" id="updateFirstName" name="firstName" placeholder="John" required />
+              </div>
+
+              <div class="input-group">
+                <label for="updateLastName">Last Name</label>
+                <input type="text" id="updateLastName" name="lastName" placeholder="Doe" required />
+              </div>
+            </div>
+
+            <div class="input-group">
+              <label for="updateEmail">Email</label>
+              <input type="email" id="updateEmail" name="email" placeholder="student@example.com" required />
+            </div>
+
+            <div class="grid-two">
+              <div class="input-group">
+                <label for="updatePhone">Phone</label>
+                <input type="tel" id="updatePhone" name="phone" placeholder="+1234567890" required />
+              </div>
+
+              <div class="input-group">
+                <label for="updateCourse">Course</label>
+                <input type="text" id="updateCourse" name="course" placeholder="Computer Science" required />
+              </div>
+            </div>
+
+            <div class="input-group">
+              <label for="updateAddress">Address</label>
+              <textarea id="updateAddress" name="address" rows="3" placeholder="Your address" required></textarea>
+            </div>
+
+            <button type="submit" class="btn-primary">Update Profile</button>
+          </form>
+
+          <p class="switch-link">
+            <a href="login.html">Back to login</a>
+          </p>
+        </div>
+
+        <aside class="events-panel">
+          <div class="events-header">
+            <span class="tag">Campus Life</span>
+            <h2>Vignan University</h2>
+            <p>Club Events</p>
+          </div>
+
+          <div id="clubEventsGrid" class="club-grid"></div>
+        </aside>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
