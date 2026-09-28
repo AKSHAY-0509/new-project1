@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Staff Signup</title>
+    <link rel="stylesheet" href="../students/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-box">
+        <h1>Staff Signup</h1>
+        <p>Create your staff account</p>
+
+        <form id="staffSignupForm">
+          <div class="grid-two">
+            <div class="input-group">
+              <label for="staffFirstName">First Name</label>
+              <input type="text" id="staffFirstName" required />
+            </div>
+            <div class="input-group">
+              <label for="staffLastName">Last Name</label>
+              <input type="text" id="staffLastName" required />
+            </div>
+          </div>
+
+          <div class="input-group">
+            <label for="staffEmail">Email</label>
+            <input type="email" id="staffEmail" required />
+          </div>
+
+          <div class="input-group">
+            <label for="staffPhone">Phone</label>
+            <input type="tel" id="staffPhone" required />
+          </div>
+
+          <div class="input-group">
+            <label for="staffPassword">Password</label>
+            <input type="password" id="staffPassword" required />
+          </div>
+
+          <button type="submit" class="btn-primary">Create Account</button>
+        </form>
+
+        <p class="switch-link">
+          Already have an account?
+          <a href="login.html">Staff Login</a>
+        </p>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

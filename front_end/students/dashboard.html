@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="student-dashboard">
+    <div class="container dashboard-container">
+      <div class="dashboard-layout">
+        <div class="form-box large-box profile-panel">
+          <h1>Student Dashboard</h1>
+          <p>Welcome to Vignan University</p>
+
+          <div class="student-meta">
+            <p><strong>Name:</strong> <span id="studentName">-</span></p>
+            <p><strong>Email:</strong> <span id="studentEmail">-</span></p>
+            <p><strong>Course:</strong> <span id="studentCourse">-</span></p>
+          </div>
+
+          <p class="switch-link">
+            <a href="update-profile.html">Update Profile</a>
+          </p>
+        </div>
+
+        <aside class="events-panel">
+          <div class="events-header">
+            <span class="tag">Campus Life</span>
+            <h2>Vignan University</h2>
+            <p>Club Events</p>
+          </div>
+          <div id="clubEventsGrid" class="club-grid"></div>
+        </aside>
+      </div>
+
+      <div class="od-panel">
+        <h3>Apply for OD</h3>
+        <form id="odRequestForm">
+          <div class="grid-two">
+            <div class="input-group">
+              <label for="odReason">Reason</label>
+              <input id="odReason" type="text" placeholder="e.g. National Sports Event" required />
+            </div>
+            <div class="input-group">
+              <label for="odDuration">Duration</label>
+              <select id="odDuration" required>
+                <option value="">Choose</option>
+                <option value="Half Day">Half Day</option>
+                <option value="Full Day">Full Day</option>
+                <option value="2 Days">2 Days</option>
+                <option value="3 Days">3 Days</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="input-group">
+            <label for="odDate">Date</label>
+            <input id="odDate" type="date" required />
+          </div>
+
+          <button type="submit" class="btn-primary">Submit OD Request</button>
+        </form>
+
+        <div class="od-list" id="studentOdList" style="margin-top: 20px;"></div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

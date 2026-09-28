@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Update Staff Profile</title>
+    <link rel="stylesheet" href="../students/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-box">
+        <h1>Update Staff Profile</h1>
+        <p>Manage your staff information</p>
+
+        <form id="staffUpdateForm">
+          <div class="grid-two">
+            <div class="input-group">
+              <label for="staffUpdateFirstName">First Name</label>
+              <input type="text" id="staffUpdateFirstName" required />
+            </div>
+            <div class="input-group">
+              <label for="staffUpdateLastName">Last Name</label>
+              <input type="text" id="staffUpdateLastName" required />
+            </div>
+          </div>
+
+          <div class="input-group">
+            <label for="staffUpdateEmail">Email</label>
+            <input type="email" id="staffUpdateEmail" required />
+          </div>
+
+          <div class="input-group">
+            <label for="staffUpdatePhone">Phone</label>
+            <input type="tel" id="staffUpdatePhone" required />
+          </div>
+
+          <button type="submit" class="btn-primary">Update Profile</button>
+        </form>
+
+        <p class="switch-link">
+          <a href="dashboard.html">Back to dashboard</a>
+        </p>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
